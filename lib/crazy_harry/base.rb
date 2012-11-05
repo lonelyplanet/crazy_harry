@@ -4,6 +4,7 @@ module CrazyHarry
     include CrazyHarry::Change
     include CrazyHarry::Redact
     include CrazyHarry::Translate
+    include CrazyHarry::Foster
 
     attr_accessor :fragment, :scope, :steps, :text
 
