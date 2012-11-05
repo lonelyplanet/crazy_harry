@@ -100,12 +100,20 @@ will return:
  
     <h3>Hotel</h3> lodging
 
+## Fostering orphaned tags.
+
+The `.foster!` command will wrap orphaned li tags in a ul tag.  **This
+only works for li tag for now.**
+
+    CrazyHarry.fragment('<li>Flying list tag</li>').foster!.to_s
+
 ## Known Issues/TODO
 
   * De-duping does not take account of whitespace.  So, `<p>Some Content</p>` and `<p>Some Content </p>` will not be treated as duplicates.
   * Be able to turn off default actions.
   * It should be able to work on documents as well as fragments.
   * Merge `.translate!` with `.change!` 
+  * Foster other orphaned tags besides just li.
 
 ## Contributing
 
