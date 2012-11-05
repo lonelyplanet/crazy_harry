@@ -107,6 +107,10 @@ only works for li tag for now.**
 
     CrazyHarry.fragment('<li>Flying list tag</li>').foster!.to_s
 
+will return:
+
+    <ul><li>Flying list tag</li></ul>
+
 ## Known Issues/TODO
 
   * De-duping does not take account of whitespace.  So, `<p>Some Content</p>` and `<p>Some Content </p>` will not be treated as duplicates.
