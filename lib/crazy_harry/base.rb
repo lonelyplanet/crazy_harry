@@ -5,6 +5,7 @@ module CrazyHarry
     include CrazyHarry::Redact
     include CrazyHarry::Translate
     include CrazyHarry::Foster
+    include CrazyHarry::Truncate
 
     attr_accessor :fragment, :scope, :steps, :text
 
