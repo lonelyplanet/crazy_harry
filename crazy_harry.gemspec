@@ -26,4 +26,6 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency 'loofah',          '>=1.2.1'
   s.add_runtime_dependency 'nokogiri',        '>=1.5.5'
+
+  s.add_dependency 'html_truncator',          '~>0.3'
 end
