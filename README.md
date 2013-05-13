@@ -111,6 +111,18 @@ will return:
 
     <ul><li>Flying list tag</li></ul>
 
+## Truncating
+
+The `.truncate!` command will truncate input preserving HTML tags.
+
+    CrazyHarry.fragment( '<p>Long <b>text goes here</b></p>' ).truncate!(3)
+
+will return
+
+    <p>Long <b>text goes</b>…</p>
+
+It accepts hash of options and passes it to [HTML_Truncator](https://github.com/nono/HTML-Truncator). It returns self and can be chained with other commands.
+
 ## Known Issues/TODO
 
   * De-duping does not take account of whitespace.  So, `<p>Some Content</p>` and `<p>Some Content </p>` will not be treated as duplicates.
