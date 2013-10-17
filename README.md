@@ -34,7 +34,7 @@ CrazyHarry wraps up a number these tasks in a simple DSL, while adding commands 
 
 ## Default Actions
 
-It automatically removes blank tags, converts `<br \>` tags to wrapped
+It automatically removes blank tags, converts `<br />` tags to wrapped
 paragraphs and de-dupes content.  
 
 ## Chaining
