@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'guard-rspec', '>=1.0.1'
   s.add_development_dependency 'simplecov',   '>=0.6.4'
 
-  s.add_runtime_dependency 'loofah',          '>=1.2.1'
+  s.add_runtime_dependency 'loofah',          '~>1'
   s.add_runtime_dependency 'nokogiri',        '>=1.5.5'
 
   s.add_dependency 'html_truncator',          '~>0.3'
