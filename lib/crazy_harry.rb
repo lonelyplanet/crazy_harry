@@ -12,10 +12,11 @@ module CrazyHarry
 
     def fragment(fragment, opts = {})
       preserve_brs = opts.delete(:preserve_brs)
+      preserve_dupes = opts.delete(:preserve_dupes)
       base = Base.new(fragment: fragment)
       base.no_blanks!
       base.convert_br_to_p! unless preserve_brs
-      base.dedupe!
+      base.dedupe! unless preserve_dupes
       base
     end
 
